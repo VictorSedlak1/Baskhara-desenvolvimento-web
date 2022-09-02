@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de desenvolvimento web Baskhara</title>
+  </head>
+  <body>
+    <form>
+      <label for="vaalorA"></label>
+      <input type="" name="" id="" />
+      <label for="valorB"></label>
+      <input type="number" name="" id="" />
+      <label for="valorC"></label>
+      <input type="number" name="" id="" />
+    </form>
+        <button onclick="calcula_soma()">Somar</button>
+        <div id="resposta1"></div>
+        <div id="resposta2"></div>
+    <script>
+        function calca_soma() {
+            const valorA = Number(document.getElementById("valorA"));
+            const valorB = Number(document.getElementById("valorA"));
+            const valorC = Number(document.getElementById("valorA"));
+            const delta = valorB **2 - ((4 * valorA) * valorC)
+            const baskharaUm = (-valorB + Math.sqrt(delta)) / (valorA * 2)
+            const baskharaDois = (-valorB - Math.sqrt(delta)) / (valorA * 2)
+
+            document.getElementById("resposta1").inner.HTML = `Baskhara resultado 1 ${baskharaUm.toFixed(3)}`
+            document.getElementById("resposta2").inner.HTML = `Baskhara resultado 2 ${baskharaDois.toFixed(3)}`
+        }
+    </script>
+  </body>
+</html>
